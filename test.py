@@ -1,6 +1,6 @@
-aitext = open("C:\\Users\\gerhas\\Documents\\GitHub\\bert\\text\\AI.txt", "r").read()
-shoppingtext = open("C:\\Users\\gerhas\\Documents\\GitHub\\bert\\text\\shopping.txt", "r").read()
-query = open("C:\\Users\\gerhas\\Documents\\GitHub\\bert\\text\\query.txt", "r").read()
+aitext = open("text\\AI.txt", "r").read()
+shoppingtext = open("text\\shopping.txt", "r").read()
+query = open("text\\query.txt", "r").read()
 
 import scipy.spatial.distance
 

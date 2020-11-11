@@ -1,18 +1,177 @@
-Background Features in Google Meet, Powered by Web ML
-Friday, October 30, 2020
-Posted by Tingbo Hou and Tyler Mullen, Software Engineers, Google Research
-Video conferencing is becoming ever more critical in people's work and personal lives. Improving that experience with privacy enhancements or fun visual touches can help center our focus on the meeting itself. As part of this goal, we recently announced ways to blur and replace your background in Google Meet, which use machine learning (ML) to better highlight participants regardless of their surroundings. Whereas other solutions require installing additional software, Meet’s features are powered by cutting-edge web ML technologies built with MediaPipe that work directly in your browser — no extra steps necessary. One key goal in developing these features was to provide real-time, in-browser performance on almost all modern devices, which we accomplished by combining efficient on-device ML models, WebGL-based rendering, and web-based ML inference via XNNPACK and TFLite.
+Skip to main contentWalmart.com - Save Money. Live Better.
+Pickup & delivery
+Walmart.com
 
+null
 
-Background blur and background replacement, powered by MediaPipe on the web.
-Overview of Our Web ML Solution
-The new features in Meet are developed with MediaPipe, Google's open source framework for cross-platform customizable ML solutions for live and streaming media, which also powers ML solutions like on-device real-time hand, iris and body pose tracking.
+null
+Search Walmart.com
 
-A core need for any on-device solution is to achieve high performance. To accomplish this, MediaPipe’s web pipeline leverages WebAssembly, a low-level binary code format designed specifically for web browsers that improves speed for compute-heavy tasks. At runtime, the browser converts WebAssembly instructions into native machine code that executes much faster than traditional JavaScript code. In addition, Chrome 84 recently introduced support for WebAssembly SIMD, which processes multiple data points with each instruction, resulting in a performance boost of more than 2x.
+null
 
-Our solution first processes each video frame by segmenting a user from their background (more about our segmentation model later in the post) utilizing ML inference to compute a low resolution mask. Optionally, we further refine the mask to align it with the image boundaries. The mask is then used to render the video output via WebGL2, with the background blurred or replaced.
+null
+Account
+null
+Reorder
+null
+1
+Groceries & gifts delivered from our store as soon as today! Learn about Walmart+
+Groceries & gifts delivered from our store as soon as today!
+Learn about Walmart+
 
-WebML Pipeline: All compute-heavy operations are implemented in C++/OpenGL and run within the browser via WebAssembly.
-In the current version, model inference is executed on the client’s CPU for low power consumption and widest device coverage. To achieve real-time performance, we designed efficient ML models with inference accelerated by the XNNPACK library, the first inference engine specifically designed for the novel WebAssembly SIMD specification. Accelerated by XNNPACK and SIMD, the segmentation model can run in real-time on the web.
+Online-only deals
+Catch a sneak peek at Black Friday savings starting 11/11, 7 PM ET.
+See the deals
 
-Enabled by MediaPipe's flexible configuration, the background blur/replace solution adapts its processing based on device capability. On high-end devices it runs the full pipeline to deliver the highest visual quality, whereas on low-end devices it continues to perform at speed by switching to compute-light ML models and bypassing the mask refinement.
+Pour fun into mornings
+Enjoy frooty flavor & a sweet spark.
+Shop now
+Pour fun into mornings with Froot Loops and Frosted Flakes.
+Hot deals on top giftsShop all
+
+Apple AirPods Pro
+2323
+$194.00$194.00$194.00 PER EACH$194.00/each
+2-day delivery
+Add to cart
+Rollback
+
+LEGO Classic Bricks and Animals 11011 Creative Toy That Builds into 10 Amazing Animal Figures (1,500 Pieces)
+36
+$30.00$30.00WAS $58.00$58.00
+2-day delivery
+Add to cart
+
+Roku Ultra LT Streaming Media Player 2019
+324
+$48.00$48.00
+Choose options
+
+Madden NFL 21 MVP Edition, Electronic Arts, PlayStation 4 & PlayStation 5
+7
+$59.42$59.42$59.42 PER EACH$59.42/each
+Add to cart
+
+Pickup or delivery
+
+Groceries & even more
+12620 Se 41st Pl, Bellevue
+Start your order
+5% cash back
+
+Earn 5% cash back
+every day on Walmart.com.
+Learn how
+Black Friday
+
+New online-only deals
+Starting 11/11, 7 PM ET.
+View local ad
+Quick, easy reorders
+Your favorite items at your fingertips
+Shop now
+
+Bought 4 times
+Hunt’s Best Ever Tomato Ketchup, 38-oz. Bottle
+$2.78$2.78(7.3 ¢/oz)
+Add to cart
+
+Bought 3 times
+Hershey's, Simply 5 Chocolate Syrup, 21.8 Oz.
+$11.20$11.20
+Add to cart
+
+Bought 1 time
+Persil ProClean Liquid Laundry Detergent, Intense Fresh, 150 Fluid Ounces, 96 Loads
+$16.87$16.87(17.6 ¢/ea)
+Add to cart
+Family baking faves. Spend less on all the ingredients you need for a sweet holiday tradition. Shop now.
+
+Shop by category
+
+See More
+Electronics
+Electronics
+Men’s clothing
+Men’s clothing
+Wellness 
+Wellness 
+Toys
+Toys
+Women’s clothing
+Women’s clothing
+Gift finder: Simplify & save
+Shop home gifts under $25
+Home gifts under $25
+Shop fashion gifts under $25
+Fashion gifts under $25
+Retro & nostalgic picks
+Retro & nostalgic picks
+Gifts by price
+Gifts by price
+Email address
+Enter email for weekly newsletter.
+
+Sign up
+null
+null
+null
+null
+null
+null
+Mobile apps
+Walmart Services
+Walmart+
+Grocery Pickup & Delivery
+MoneyCenter
+Walmart Credit Card
+Walmart Pay
+Weekly Ad
+Other Services
+Get to Know Us
+Our Company
+Store Directory
+Digital Museum
+Our Suppliers
+Sell on Walmart.com
+Advertise With Us
+Careers
+Walmart.com
+Walmart Labs
+Our Ads
+Terms of Use
+Privacy & Security
+CA Privacy Rights
+Do Not Sell My Personal Information
+Request My Personal Information
+Tax Exempt Program
+Customer Service
+Help Center
+Returns
+Product Recalls
+Accessibility
+Contact Us
+Store Pickup
+In The Spotlight
+Portable Air Conditioners
+PS4
+Trampoline
+Skateboard
+Outdoor Furniture
+Nintendo Switch Lite
+Shop Our Brands
+Shop at Allswell dot com
+Shop at Art dot com
+Shop at Bonobos dot com
+Shop at Eloquii dot com
+Shop at Hayneedle dot com
+Shop at Moosejaw dot com
+Walmart eBooks by Rakuten kobo
+Shop at Walmart Photo
+Shop at Sams Club dot com
+Shop Walmart dot com
+© 2020 Walmart. All Rights Reserved.
+To ensure we are able to help you as best we can, please include your reference number: CQ3MATGLFI
+
+null
+Feedback
