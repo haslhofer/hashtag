@@ -1,0 +1,18 @@
+Background Features in Google Meet, Powered by Web ML
+Friday, October 30, 2020
+Posted by Tingbo Hou and Tyler Mullen, Software Engineers, Google Research
+Video conferencing is becoming ever more critical in people's work and personal lives. Improving that experience with privacy enhancements or fun visual touches can help center our focus on the meeting itself. As part of this goal, we recently announced ways to blur and replace your background in Google Meet, which use machine learning (ML) to better highlight participants regardless of their surroundings. Whereas other solutions require installing additional software, Meet’s features are powered by cutting-edge web ML technologies built with MediaPipe that work directly in your browser — no extra steps necessary. One key goal in developing these features was to provide real-time, in-browser performance on almost all modern devices, which we accomplished by combining efficient on-device ML models, WebGL-based rendering, and web-based ML inference via XNNPACK and TFLite.
+
+
+Background blur and background replacement, powered by MediaPipe on the web.
+Overview of Our Web ML Solution
+The new features in Meet are developed with MediaPipe, Google's open source framework for cross-platform customizable ML solutions for live and streaming media, which also powers ML solutions like on-device real-time hand, iris and body pose tracking.
+
+A core need for any on-device solution is to achieve high performance. To accomplish this, MediaPipe’s web pipeline leverages WebAssembly, a low-level binary code format designed specifically for web browsers that improves speed for compute-heavy tasks. At runtime, the browser converts WebAssembly instructions into native machine code that executes much faster than traditional JavaScript code. In addition, Chrome 84 recently introduced support for WebAssembly SIMD, which processes multiple data points with each instruction, resulting in a performance boost of more than 2x.
+
+Our solution first processes each video frame by segmenting a user from their background (more about our segmentation model later in the post) utilizing ML inference to compute a low resolution mask. Optionally, we further refine the mask to align it with the image boundaries. The mask is then used to render the video output via WebGL2, with the background blurred or replaced.
+
+WebML Pipeline: All compute-heavy operations are implemented in C++/OpenGL and run within the browser via WebAssembly.
+In the current version, model inference is executed on the client’s CPU for low power consumption and widest device coverage. To achieve real-time performance, we designed efficient ML models with inference accelerated by the XNNPACK library, the first inference engine specifically designed for the novel WebAssembly SIMD specification. Accelerated by XNNPACK and SIMD, the segmentation model can run in real-time on the web.
+
+Enabled by MediaPipe's flexible configuration, the background blur/replace solution adapts its processing based on device capability. On high-end devices it runs the full pipeline to deliver the highest visual quality, whereas on low-end devices it continues to perform at speed by switching to compute-light ML models and bypassing the mask refinement.
