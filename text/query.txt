@@ -1,177 +1,124 @@
-Skip to main contentWalmart.com - Save Money. Live Better.
-Pickup & delivery
-Walmart.com
+ 
 
-null
+ Newfolder Recycle Bin
 
-null
-Search Walmart.com
+ a P Type here to search
 
-null
+  
 
-null
-Account
-null
-Reorder
-null
-1
-Groceries & gifts delivered from our store as soon as today! Learn about Walmart+
-Groceries & gifts delivered from our store as soon as today!
-Learn about Walmart+
+ BF 120401765 pcr x +
 
-Online-only deals
-Catch a sneak peek at Black Friday savings starting 11/11, 7 PM ET.
-See the deals
+    O A & https/aniv.org/pdf/1904.01766.pdF
 
-Pour fun into mornings
-Enjoy frooty flavor & a sweet spark.
-Shop now
-Pour fun into mornings with Froot Loops and Frosted Flakes.
-Hot deals on top giftsShop all
+      
 
-Apple AirPods Pro
-2323
-$194.00$194.00$194.00 PER EACH$194.00/each
-2-day delivery
-Add to cart
-Rollback
+ 3. | of 13 ss fe Fe) A) Read aloud VY Draw Y  Gf Highlight Vv < Erase
 
-LEGO Classic Bricks and Animals 11011 Creative Toy That Builds into 10 Amazing Animal Figures (1,500 Pieces)
-36
-$30.00$30.00WAS $58.00$58.00
-2-day delivery
-Add to cart
+ a proper joint generative model, as explained in Section 3.
 
-Roku Ultra LT Streaming Media Player 2019
-324
-$48.00$48.00
-Choose options
+Cross-modal learning. The multi-modal nature of video
+has also been an extensive source of supervision for learn-
+ing video representations, which our paper builds on. Since
+most videos contain synchronized audio and visual signals,
+the two modalities can supervise each other to learn strong
+self-supervised video representations [3, 20, 21]. In this
+work, we use speech (provided by ASR) rather than low-
+level sounds as a source of cross-modal supervision.
 
-Madden NFL 21 MVP Edition, Electronic Arts, PlayStation 4 & PlayStation 5
-7
-$59.42$59.42$59.42 PER EACH$59.42/each
-Add to cart
+Natural language models. We build upon recent
+progress in the NLP community, where large-scale lan-
+guage models such as ELMO [22] and BERT [6] have
+shown state-of-the-art results for various NLP tasks, both at
+the word level (e.g., POS tagging) and sentence level (e.g.,
+semantic classification). The BERT model is then extended
+to pre-train on multi-lingual data [!2]. Our paper builds on
+the BERT model to capture structure in both the linguistic
+and visual domains.
 
-Pickup or delivery
+Image and video captioning. There has been much re-
+cent work on image captioning (see e.g., [1 1, 8, 15]), which
+is a model of the form p(y|), where y is the manually pro-
+vided caption and   is the image. There has also been some
+work on video captioning, using either manually provided
+temporal segmentation or estimated segmentations (see e.g.,
+[10, 39]). We use our joint p(a,y) model and apply it to
+video captioning, and achieve state-of-the-art results, as we
+discuss in Section 4.6.
 
-Groceries & even more
-12620 Se 41st Pl, Bellevue
-Start your order
-5% cash back
+Instructional videos. Various papers (e.g., [16, 2, 10,
+38, 39]) have trained models to analyse instructional videos,
+such as cooking. We differ from this work in that we do not
+use any manual labeling, and we learn a large-scale genera-
+tive model of both words and (discretized) visual signals.
 
-Earn 5% cash back
-every day on Walmart.com.
-Learn how
-Black Friday
+ 3. Models
 
-New online-only deals
-Starting 11/11, 7 PM ET.
-View local ad
-Quick, easy reorders
-Your favorite items at your fingertips
-Shop now
+ In this section, we briefly summarize the BERT model,
+and then describe how we extend it to jointly model video
+and language data.
 
-Bought 4 times
-Hunt’s Best Ever Tomato Ketchup, 38-oz. Bottle
-$2.78$2.78(7.3 ¢/oz)
-Add to cart
+ 3.1. The BERT model
 
-Bought 3 times
-Hershey's, Simply 5 Chocolate Syrup, 21.8 Oz.
-$11.20$11.20
-Add to cart
+ BERT [6] proposes to learn language representations by
+using a  masked language model  training objective. In
+more detail, let   = {21,...,2,} be a set of discrete to-
 
-Bought 1 time
-Persil ProClean Liquid Laundry Detergent, Intense Fresh, 150 Fluid Ounces, 96 Loads
-$16.87$16.87(17.6 ¢/ea)
-Add to cart
-Family baking faves. Spend less on all the ingredients you need for a sweet holiday tradition. Shop now.
+ Sono ga
 
-Shop by category
+ ding for each of the word tokens, as well as for these tags,
+and then sums the embedding vectors to get a continuous
+representation for each token. The log potential (energy)
+functions for each location are defined by
 
-See More
-Electronics
-Electronics
-Men’s clothing
-Men’s clothing
-Wellness 
-Wellness 
-Toys
-Toys
-Women’s clothing
-Women’s clothing
-Gift finder: Simplify & save
-Shop home gifts under $25
-Home gifts under $25
-Shop fashion gifts under $25
-Fashion gifts under $25
-Retro & nostalgic picks
-Retro & nostalgic picks
-Gifts by price
-Gifts by price
-Email address
-Enter email for weekly newsletter.
+ log  i(a|9) = af fo(a1)
 
-Sign up
-null
-null
-null
-null
-null
-null
-Mobile apps
-Walmart Services
-Walmart+
-Grocery Pickup & Delivery
-MoneyCenter
-Walmart Credit Card
-Walmart Pay
-Weekly Ad
-Other Services
-Get to Know Us
-Our Company
-Store Directory
-Digital Museum
-Our Suppliers
-Sell on Walmart.com
-Advertise With Us
-Careers
-Walmart.com
-Walmart Labs
-Our Ads
-Terms of Use
-Privacy & Security
-CA Privacy Rights
-Do Not Sell My Personal Information
-Request My Personal Information
-Tax Exempt Program
-Customer Service
-Help Center
-Returns
-Product Recalls
-Accessibility
-Contact Us
-Store Pickup
-In The Spotlight
-Portable Air Conditioners
-PS4
-Trampoline
-Skateboard
-Outdoor Furniture
-Nintendo Switch Lite
-Shop Our Brands
-Shop at Allswell dot com
-Shop at Art dot com
-Shop at Bonobos dot com
-Shop at Eloquii dot com
-Shop at Hayneedle dot com
-Shop at Moosejaw dot com
-Walmart eBooks by Rakuten kobo
-Shop at Walmart Photo
-Shop at Sams Club dot com
-Shop Walmart dot com
-© 2020 Walmart. All Rights Reserved.
-To ensure we are able to help you as best we can, please include your reference number: CQ3MATGLFI
+ where  x; is a one-hot vector for the / th token (and its tag),
+and
 
-null
-Feedback
+ @\ = (#1,.--, 21-1, MASK, ai41,..-, 22)
+
+ The function f(2\,) is a multi-layer bidirectional trans-
+former model [28] that takes an L x D, tensor, contain-
+ing the D,-dimensional embedding vectors corresponding
+to a\;, and returns an L x Dz tensor, where Dz is the size
+of the output of each transformer node. See [6] for details.
+The model is trained to approximately maximize the pseudo
+log-likelihood
+
+ L
+L(0) = Exp Y log p(xi|2\1: 8)
+I=1
+
+ In practice, we can stochastically optimize the logloss
+(computed from the softmax predicted by the f function)
+by sampling locations as well as training sentences.
+
+BERT can be extended to model two sentences by con-
+catenating them together. However, we are often not only
+interested in simply modeling the extended sequence, but
+rather relationships between the two sentences (e.g., is this a
+pair of consecutive or randomly selected sentences). BERT
+accomplishes this by prepending every sequence with a spe-
+cial classification token, [CLS], and by joining sentences
+with a special separator token, [SEP]. The final hidden state
+corresponding to the [CLS] token is used as the aggregate
+sequence representation from which we predict a label for
+classification tasks, or which may otherwise be ignored. In
+addition to differentiating sentences with the [SEP] token,
+BERT also optionally tags each token by the sentence it
+comes from. The corresponding joint model can be written
+as p(x, y,c), where is the first sentence, y is the second,
+and c = {0,1} is a label indicating whether the sentences
+were separate or consecutive in the source document.
+
+For consistency with the original paper, we also add a
+[SEP] token to the end of the sequence, even though it
+is not strictly needed. So, a typical masked-out training
+
+  
+
+ Observational A.
+
+ se %   @
+Beis
+ 
