@@ -70,7 +70,7 @@ def get_recipes():
             print("%.4f" % (1-distance))
         
     print ("End:" + str(datetime.datetime.now()))
-    return jsonify(confidences)
+    return jsonify({'Table1': confidences})
 
 
 @app.route('/recipes/<int:recipe_id>', methods=['GET'])

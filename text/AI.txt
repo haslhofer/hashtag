@@ -1,48 +1,74 @@
-tion: This course will go under the hood and teach students how to design and evaluate high-level :
-systems that use privacy PETS. After this course, students will be able to comprehend technical PET papers, 7
-
-vite implementations based on them, and design eystems that leverage PETs, Tops covered il incude ] -
-federated learning, split learning, differential privacy, homomorphic encryption, cryptographic signatures,
-
-public key technology, and more.
+and sentence level (e.g.,
+semantic classification). The BERT model is then extended
+to pre-train on multi-lingual data [2]. Our paper builds on
+the BERT model to capture structure in both the linguistic
+and visual domains.
 
   
 
- Cross-Enterprise Statistics and Federated Learning: This practitioner course will give students an
-understanding of how to use PyTorch and PySyft to perform cross-organizational analysis. Among the topics
-covered, students will earn how to search for data that cannot be seen; clean and extract, transform, and load
-(ETL) data without being able to analyze it; train models and perform statistical analysis using remote
-execution tools; and work with models and data across multiple organizations simultaneously
+ Image and video captioning. There has been much re-
+cent work on image captioning (seee-g.,[!1, 8 15]), which
+is a model of the form p(y|x), where y is the manually pro-
+ vided caption and 2 isthe image. There has also been some
+work on video captioning, using either manually provided
+temporal segmentation or estimated segmentations (see e.g.
+{20, 29). We use our joint p(z,y) model and apply it to
 
- ML APPLICATIONS
+ = 2 B 
 
- Federated Statistics and Learning on Web and Mobile: This course will cover how to build web and mobile Expanding automatic machine
+ V Draw Y  F Highlight VY < Erase
 
-apps that store data on devices running Android, iOS, and Reacts. Students will use PyTorch to perform translation to more languages
+ where 6y(2) isthe 'th potential function, with parameters
+8, and Z is the partion function
 
-distributed database queries and train models using federated learning. By the end of the course, participants
+ The above model is permutation invariant. In order 10
+capture order information, we can  tag  each word with its
+Position in the sentence. The BERT model leams an embed-
+Ging fr each of the word tokens, as well as for these tags,
+and then sums the embedding vectors to get a continuous
+representation for each token. The log potential (energy)
+functions for each locaton are defined by
 
-will understand how to build an application with a distributed, on-device database; build an application while Part of Facebook's mission to bring the
+ log du (2|9) = 27 fo(e)
 
-training a federated learning model on a device; and leverage private-set intersection for private queries world closer operas  brealdiig down
+ where 2 is a one-hot vector for the Ith token (and its tag),
+and
 
-between a Servet and cilent, language barriers and allowing everyone to
- engage with content in their preferred...
+By = (@1y.-.,211) MASK, 2141,-.-522)
+ The function f(2\,) is a multi-layer bidirectional trans-
+former model [28] that takes an L x Dy tensor, contain-
+ing the D,-dimensional embedding vectors corresponding
+to n\,, and returns an L x Dz tensor, where Dz is the size
+of the output of each transformer node. See [6] for details
+ The mode is trained to approximately maximize the pseudo
+log-likelihood
+
+L
+
+ L(0) = Benn Y log p(2ilai8)
 
    
 
-  The Awareness course will begin in January 2021. Anyone interested in registering can visit
-yenmined.org for more information. September 11, 2018
+  
+
+ In practice, we can stochastically optimize the logloss
+(computed from the softmax predicted by the f function)
+by sampling locations as well as training sentences.
+
+BERT can be extended to model two sentences by con-
+catenating them together. However, we are often not only
+
+ ve
+
+  
+
+ @
 
   
 
   
 
-  
+ a
 
- | es
-PM
-a | P Type here to search a eT ater
-
-  
+ Pee)
  
