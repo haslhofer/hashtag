@@ -1,37 +1,38 @@
- TA
-PZ tant to leverage the abundance of unlabeled data avail- but this is hard to acquire at scale. Consequently there has
-Sable on platforms like YouTube. Whereas most existing been a lot of recent interest in  self supervised learning ,
-<2) approaches learn low-level representations, we propose a where we train a model on vatious  proxy tasks, which we
-So Hee CE LR Meee ces | le Glcahu ues dias bee
-1) pica cay Cnlitk eapeiiod Tic parteulde Wapiea vou har ear'be asc Gguurcain taaed Acide viety
+tion: This course will go under the hood and teach students how to design and evaluate high-level :
+systems that use privacy PETS. After this course, students will be able to comprehend technical PET papers, 7
 
- by its recent success in language modeling, we build upon
-the BERT model to learn bidirectional joint distributions
-over sequences of visual and linguistic tokens, derived from
-vector quantization of video data and off-the-shelf speech
-recognition outputs, respectively. We use VideoBERT in nu-
- merous tasks, including action classification and video cap-
-tioning. We show that it can be applied directly 10 open-
-vocabulary classification, and confirm that large amounts
-of training data and cross-modal information are critical 10
-performance. Furthermore, we outperform the state-of-the-
- art on video captioning, and quantitative results verify that
-the model learns high-level semantic features.
+vite implementations based on them, and design eystems that leverage PETs, Tops covered il incude ] -
+federated learning, split learning, differential privacy, homomorphic encryption, cryptographic signatures,
 
- of such proxy tasks have been proposed in the image and
-video domains. However, most of these methods focus on
-low level features (cg., textures) and short temporal scales
-(g., motion patterns that last a second or less). We are in-
-terested in discovering high-level semantic features which
-correspond to actions and events that unfold over longer
-time scales (e.g. minutes) since such representations would
-be useful for various video understanding tasks.
+public key technology, and more.
 
-In this paper, we exploit the key insight that human
-language has evolved words to describe high-level objects
-and events, and thus provides a natural source of  self 
-supervision. In particular, we present a simple way to
- model the relationship between the visual domain and the
+  
+
+ Cross-Enterprise Statistics and Federated Learning: This practitioner course will give students an
+understanding of how to use PyTorch and PySyft to perform cross-organizational analysis. Among the topics
+covered, students will earn how to search for data that cannot be seen; clean and extract, transform, and load
+(ETL) data without being able to analyze it; train models and perform statistical analysis using remote
+execution tools; and work with models and data across multiple organizations simultaneously
+
+ ML APPLICATIONS
+
+ Federated Statistics and Learning on Web and Mobile: This course will cover how to build web and mobile Expanding automatic machine
+
+apps that store data on devices running Android, iOS, and Reacts. Students will use PyTorch to perform translation to more languages
+
+distributed database queries and train models using federated learning. By the end of the course, participants
+
+will understand how to build an application with a distributed, on-device database; build an application while Part of Facebook's mission to bring the
+
+training a federated learning model on a device; and leverage private-set intersection for private queries world closer operas  brealdiig down
+
+between a Servet and cilent, language barriers and allowing everyone to
+ engage with content in their preferred...
+
+   
+
+  The Awareness course will begin in January 2021. Anyone interested in registering can visit
+yenmined.org for more information. September 11, 2018
 
   
 
@@ -39,14 +40,9 @@ supervision. In particular, we present a simple way to
 
   
 
- Seon aa
-
- cd
-
- Dy one)
-
- cy
-SADE)
+ | es
+PM
+a | P Type here to search a eT ater
 
   
  

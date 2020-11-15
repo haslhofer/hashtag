@@ -1,124 +1,117 @@
- 
-
- Newfolder Recycle Bin
-
- a P Type here to search
+Fi
 
   
 
- BF 120401765 pcr x +
+  
 
-    O A & https/aniv.org/pdf/1904.01766.pdF
+ IEE onenote resource type  Micros:
 
-      
+ e
 
- 3. | of 13 ss fe Fe) A) Read aloud VY Draw Y  Gf Highlight Vv < Erase
+ P Type here to search
 
- a proper joint generative model, as explained in Section 3.
+ oO a
 
-Cross-modal learning. The multi-modal nature of video
-has also been an extensive source of supervision for learn-
-ing video representations, which our paper builds on. Since
-most videos contain synchronized audio and visual signals,
-the two modalities can supervise each other to learn strong
-self-supervised video representations [3, 20, 21]. In this
-work, we use speech (provided by ASR) rather than low-
-level sounds as a source of cross-modal supervision.
+ FB Facebook Al Research
 
-Natural language models. We build upon recent
-progress in the NLP community, where large-scale lan-
-guage models such as ELMO [22] and BERT [6] have
-shown state-of-the-art results for various NLP tasks, both at
-the word level (e.g., POS tagging) and sentence level (e.g.,
-semantic classification). The BERT model is then extended
-to pre-train on multi-lingual data [!2]. Our paper builds on
-the BERT model to capture structure in both the linguistic
-and visual domains.
+ x
 
-Image and video captioning. There has been much re-
-cent work on image captioning (see e.g., [1 1, 8, 15]), which
-is a model of the form p(y|), where y is the manually pro-
-vided caption and   is the image. There has also been some
-work on video captioning, using either manually provided
-temporal segmentation or estimated segmentations (see e.g.,
-[10, 39]). We use our joint p(a,y) model and apply it to
-video captioning, and achieve state-of-the-art results, as we
-discuss in Section 4.6.
+ G\_https://ai.facebook.com/research#notable-papers
 
-Instructional videos. Various papers (e.g., [16, 2, 10,
-38, 39]) have trained models to analyse instructional videos,
-such as cooking. We differ from this work in that we do not
-use any manual labeling, and we learn a large-scale genera-
-tive model of both words and (discretized) visual signals.
+ FACEBOOK Al
 
- 3. Models
-
- In this section, we briefly summarize the BERT model,
-and then describe how we extend it to jointly model video
-and language data.
-
- 3.1. The BERT model
-
- BERT [6] proposes to learn language representations by
-using a  masked language model  training objective. In
-more detail, let   = {21,...,2,} be a set of discrete to-
-
- Sono ga
-
- ding for each of the word tokens, as well as for these tags,
-and then sums the embedding vectors to get a continuous
-representation for each token. The log potential (energy)
-functions for each location are defined by
-
- log  i(a|9) = af fo(a1)
-
- where  x; is a one-hot vector for the / th token (and its tag),
-and
-
- @\ = (#1,.--, 21-1, MASK, ai41,..-, 22)
-
- The function f(2\,) is a multi-layer bidirectional trans-
-former model [28] that takes an L x D, tensor, contain-
-ing the D,-dimensional embedding vectors corresponding
-to a\;, and returns an L x Dz tensor, where Dz is the size
-of the output of each transformer node. See [6] for details.
-The model is trained to approximately maximize the pseudo
-log-likelihood
-
- L
-L(0) = Exp Y log p(xi|2\1: 8)
-I=1
-
- In practice, we can stochastically optimize the logloss
-(computed from the softmax predicted by the f function)
-by sampling locations as well as training sentences.
-
-BERT can be extended to model two sentences by con-
-catenating them together. However, we are often not only
-interested in simply modeling the extended sequence, but
-rather relationships between the two sentences (e.g., is this a
-pair of consecutive or randomly selected sentences). BERT
-accomplishes this by prepending every sequence with a spe-
-cial classification token, [CLS], and by joining sentences
-with a special separator token, [SEP]. The final hidden state
-corresponding to the [CLS] token is used as the aggregate
-sequence representation from which we predict a label for
-classification tasks, or which may otherwise be ignored. In
-addition to differentiating sentences with the [SEP] token,
-BERT also optionally tags each token by the sentence it
-comes from. The corresponding joint model can be written
-as p(x, y,c), where is the first sentence, y is the second,
-and c = {0,1} is a label indicating whether the sentences
-were separate or consecutive in the source document.
-
-For consistency with the original paper, we also add a
-[SEP] token to the end of the sequence, even though it
-is not strictly needed. So, a typical masked-out training
+ /Yigun Liu
+acral
 
   
 
- Observational A.
+ ABSTRACT
 
- se %   @
-Beis
+ In this paper, we present GrokNet, a
+deployed image recognition system for
+commerce applications. GrokNet
+leverages a multi-task learning
+approach to train a single computer
+vision trunk. We achieve a 2.1x
+improvement in exact product match
+accuracy when compared to the
+previous state-of-the-art Facebook
+product recognition system.
+
+ Read the Paper >
+
+ Latest Publications
+
+ ABSTRACT
+
+ We propose a method for face de-
+identification that enables fully
+automatic video modification at high
+frame rates. The goal is to maximally
+decorrelate the identity, while having
+ the perception (pose, illumination and
+expression) fixed.
+
+ Read the Paper >
+
+ Research
+
+ Publications
+
+  
+
+ ABSTRACT
+
+ We present the first single-network
+approach for 2D whole-body pose
+estimation, which entails simultaneous
+localization of body, face, hands, and
+feet keypoints. Our method maintains
+constant real-time performance
+regardless of the number of people in
+the image. Our approach considerably
+improves upon OpenPose, the only
+work so far capable of whole-body pose
+estimation, both in terms of speed and
+global accuracy.
+
+ Read the Paper >
+
+ S) Git.
+
+ Q*x hw %
+People Tools Blog JoinUs Q
+
+Lior wott
+
+Adam Polyak
+
+ Yaniv Taigman
+
+ International Conference on
+Learning Representations (ICLR)
+
+ ABSTRACT
+
+ We present a method for translating
+music across musical instruments and
+styles. This method is based on
+unsupervised training of a multi-domain
+wavenet autoencoder, with a shared
+encoder and a domain-independent
+latent space that is trained end-to-end
+on waveforms,
+
+ Read the Paper >
+
+  
+
+ Eva
+
+ 153M
+ec)
+
+  
+
+  
  
