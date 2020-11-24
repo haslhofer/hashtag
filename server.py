@@ -28,19 +28,29 @@ def get_ner():
     doc = nlp(query)
     entities = []
     recognized = []
+    dic = dict();
+
 
     for ent in doc.ents:
         if (ent.label_ == 'PERSON'):    
-            if (not (recognized.__contains__(ent.text))):
-                anEntity = [
-                    {
-                        'text' : ent.text,
-                        'label' : ent.label_
-                    }
-                ]
+            if (not (recognized.__contains__(ent.text))):   
                 recognized.append(ent.text)
-                entities.append(anEntity)
+                dic[ent.text] = 1
+            else:
+                dic[ent.text] = dic[ent.text] + 1
+
         print(ent.text, ent.start_char, ent.end_char, ent.label_)
+
+    for x,y in dic.items():
+        anEntity = [
+            {
+                'text' : x,
+                'label' : 'PERSON',
+                'count' : y
+            }
+        ]
+        entities.append(anEntity)
+
     return jsonify({'Table1': entities})
 
 

@@ -1,1 +1,38 @@
-ct 1 Introduction balsas Petia Self-supervised learning has become increasingly impor- Deep learning can benefit a lot from labeled data [24], tant to leverage the abundance of unlabeled data avail- but this is hard to acquire at scale Consequently there has = 0 LL L dike VouTs Sills jet bn L  - ome icod Li jae?         i      oa    a Bi ooo News x | Business & Financial News US= x | [J 190401765p<K x |+ _ vost:   & O A & hittps//aniv org/pdf/1904 01766 pdf ax 8 DB * e  A) Read aloud VV Draw Y Ff Highlight VY < Erase a od    VideoBERT: A Joint Model for Video and Language Representation Learning  Chen Sun, Austin Myers, Carl Vondrick, Kevin Murphy, and Cordelia Schmid  Google Research    Season the steak with salt and pepper  Carefully place the steak to the pan  Now let it rest and enjoy the delicious steak  input text          Flip the steak to the other side                 Newfolder Recycle Bin  Figure 1: VideoBERT text-to-video generation and future forecasting (Above) Given some recipe text divided into oer sentences, y = yi 7, We generate a sequence of video tokens  = 2,7 by computing x} = arg max, p(a, = ky) using VideoBERT (Below) Given a video token, we show the top three future tokens forecasted by VideoBERT at different time scales In this case, VideoBERT predicts that a bowl of flour and cocoa powder may be baked in an oven, and may become a brownie or cupcake We visualize video tokens using the images from the training set closest to centroids in feature space  Pee rR Cre ys cago ure pec  1904 01766v2 [cs CV] 11 Sep 2019  5 Seen Abstract 1 Introduction balsas Petia Self-supervised learning has become increasingly impor- Deep learning can benefit a lot from labeled data [24], tant to leverage the abundance of unlabeled data avail- but this is hard to acquire at scale Consequently there has = 0 LL L dike VouTs Sills jet bn L  - ome icod Li jae?         
+t/1904.01766.pdf
+VideoBERT: A Joint Model for Video and Language Representation Learning
+Chen Sun, Austin Myers, Carl Vondrick, Kevin Murphy, and Cordelia Schmid
+Google Research
+Season the steak with
+salt and pepper.
+input text
+Carefully place the steak
+to the pan
+Flip the steak to the
+other side.
+F 6.par x + = o
+< Ct arxiv.org/pat/1904.0176
+pdf Q*x #@e
+VideoBERT: A Joint Model for Video and Language Representation Learning
+Chen Sun, Austin Myers, Carl Vondrick, Kevin Murphy, and Cordelia Schmid
+Google Research
+[Season the steak with
+salt and pepper.
+Carefully place the steak
+to the pan
+Now let : #AI
+016054349
+Parr
+1"
+News
+a Search for anything
+si)
+ .aF
+e
+@ ai.googleblog.com
+Exploration and Analysis of NLP Models
+Friday, November 20, 2020
+Posted by James Wexler, Software Developer and lan Tenney, Software Engineer, Google Research
+As natural language processing (NLP) models become more powerful and are deployed in more
+real-world contexts, unde pdf
+766v2 [cs.CV] 11 Sep 2019
+x | BB Goog
