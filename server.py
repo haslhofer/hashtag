@@ -3,6 +3,8 @@ from http import HTTPStatus
 from sentence_transformers import SentenceTransformer
 import scipy.spatial.distance
 import datetime
+import spacy
+
 
 app = Flask(__name__)
 
@@ -17,6 +19,29 @@ recipes = [
         'description': 'This is a lovely tomato pasta recipe.'
     }
 ]
+
+
+@app.route('/ner', methods=['GET'])
+def get_ner():
+    query = open("text\\query.txt", "r").read()
+    #sentence = "Gerald Haslhofer is the most recent author of the article about AI"
+    doc = nlp(query)
+    entities = []
+    recognized = []
+
+    for ent in doc.ents:
+        if (ent.label_ == 'PERSON'):    
+            if (not (recognized.__contains__(ent.text))):
+                anEntity = [
+                    {
+                        'text' : ent.text,
+                        'label' : ent.label_
+                    }
+                ]
+                recognized.append(ent.text)
+                entities.append(anEntity)
+        print(ent.text, ent.start_char, ent.end_char, ent.label_)
+    return jsonify({'Table1': entities})
 
 
 @app.route('/recipes', methods=['GET'])
@@ -121,6 +146,6 @@ def update_recipe(recipe_id):
 
 if __name__ == '__main__':
     
-
+    nlp = spacy.load('en_core_web_sm')
     model = SentenceTransformer('bert-base-nli-mean-tokens')
     app.run()
